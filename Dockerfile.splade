@@ -1,0 +1,28 @@
+ARG BASE_IMAGE=nvcr.io/nvidia/l4t-pytorch:r32.6.1-pth1.9-py3
+
+FROM ${BASE_IMAGE} 
+
+# Create working directory
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+RUN apt-get update 
+RUN apt-get upgrade -y
+
+RUN apt-get install -y mosquitto-clients
+# RUN apk add python3 py3-pip
+# RUN pip3 install paho-mqtt
+RUN apt-get install -y python3-opencv
+RUN pip3 install paho-mqtt
+RUN pip3 install boto3
+RUN pip3 install requests
+RUN apt-get install -y python3-scipy
+RUN apt-get install -y python3-sklearn
+# RUN pip3 install scikit-learn
+
+COPY checkpoint.pth.tar ./
+COPY main.py ./
+COPY geo_model.pkl ./
+
+CMD ["python3","main.py"]
+# COPY main.py ./
