@@ -6,6 +6,7 @@ __pycache__/
 secret/
 splade/data/msmarco
 data.tar.gz
+splade/weights
 # C extensions
 *.so
 
