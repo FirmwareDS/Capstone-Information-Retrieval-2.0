@@ -5,6 +5,7 @@ __pycache__/
 .DS_Store
 secret/
 splade/data/msmarco
+splade/models
 data.tar.gz
 splade/weights
 # C extensions
