@@ -5,7 +5,10 @@ __pycache__/
 .DS_Store
 secret/
 splade/data/msmarco
-splade/models
+splade/models/cocondenser_ensemble_distil_monogpu/checkpoint/model
+splade/models/cocondenser_ensemble_distil_monogpu/checkpoint/model_ckpt
+splade/models/cocondenser_ensemble_distil_monogpu/checkpoint/tensorboard
+splade/models/cocondenser_ensemble_distil_monogpu/checkpoint/val_full_ranking
 data.tar.gz
 splade/weights
 # C extensions
