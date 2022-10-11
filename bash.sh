@@ -58,3 +58,8 @@ python3 -m splade.all
 #   config.out_dir=experiments/debug/out
 
 nvidia-smi
+
+
+
+tensorboard --logdir=tensorboard
+ssh -i w210.pem -N -f -L 6006:localhost:6006 ubuntu@ec2-13-56-212-101.us-west-1.compute.amazonaws.com
