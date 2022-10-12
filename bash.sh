@@ -30,7 +30,8 @@ git clone https://huggingface.co/naver/efficient-splade-V-large-doc
 
 cd ..
 
-
+wget https://www.dropbox.com/s/hir60b9yj194dv7/mlm_flops.tar.gz?dl=0
+tar -xzvf mlm_flops.tar.gz?dl=0
 
 #jupyter setup
 jupyter notebook password
