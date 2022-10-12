@@ -74,4 +74,4 @@ ssh -i w210.pem -N -f -L 6006:localhost:6006 ubuntu@ec2-13-56-212-101.us-west-1.
 
 
 
-export SPLADE_CONFIG_FULLPATH=../config/efficient_splade/config_BT_VI_large.yaml
+export SPLADE_CONFIG_FULLPATH=../conf/efficient_splade/config_BT_VI_large.yaml
