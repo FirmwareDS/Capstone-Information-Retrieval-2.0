@@ -23,6 +23,13 @@ tar -xzvf data.tar.gz
 rm data.tar.gz
 cd weights
 git clone https://huggingface.co/naver/splade-cocondenser-ensembledistil
+git clone https://huggingface.co/naver/efficient-splade-VI-BT-large-query
+git clone https://huggingface.co/naver/efficient-splade-VI-BT-large-doc
+git clone https://huggingface.co/naver/efficient-splade-V-large-query
+git clone https://huggingface.co/naver/efficient-splade-V-large-doc
+
+cd ..
+
 
 
 #jupyter setup
