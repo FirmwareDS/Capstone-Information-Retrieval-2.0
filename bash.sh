@@ -23,7 +23,15 @@ tar -xzvf data.tar.gz
 rm data.tar.gz
 cd weights
 git clone https://huggingface.co/naver/splade-cocondenser-ensembledistil
+git clone https://huggingface.co/naver/efficient-splade-VI-BT-large-query
+git clone https://huggingface.co/naver/efficient-splade-VI-BT-large-doc
+git clone https://huggingface.co/naver/efficient-splade-V-large-query
+git clone https://huggingface.co/naver/efficient-splade-V-large-doc
 
+cd ..
+
+wget https://www.dropbox.com/s/hir60b9yj194dv7/mlm_flops.tar.gz?dl=0
+tar -xzvf mlm_flops.tar.gz?dl=0
 
 #jupyter setup
 jupyter notebook password
@@ -63,3 +71,7 @@ nvidia-smi
 
 tensorboard --logdir=tensorboard
 ssh -i w210.pem -N -f -L 6006:localhost:6006 ubuntu@ec2-13-56-212-101.us-west-1.compute.amazonaws.com
+
+
+
+export SPLADE_CONFIG_FULLPATH=../conf/efficient_splade/config_BT_VI_large.yaml
