@@ -1,6 +1,6 @@
 mkdir project 
 cd project
-git clone https://github.com/MIDS-2022-Fall-Section4-Team1/Neural-Information-Retrieval
+git clone https://github.com/FirmwareDS/Capstone-Information-Retrieval-2.0
 #chmod 400 *.pem
 
 cd Neural-Information-Retrieval/
