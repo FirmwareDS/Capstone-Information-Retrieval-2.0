@@ -75,8 +75,8 @@ class Ranking:
             d = {}
             d['metadata'] = get_metadata_only()
             d['provenance'] = self.provenance()
-            #line = ujson.dumps(d)
-            #f.write(line)
+            line = ujson.dumps(d, indent=4)
+            f.write(line)
         
         return output_path
 
