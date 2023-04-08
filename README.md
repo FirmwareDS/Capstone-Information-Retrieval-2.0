@@ -1,4 +1,4 @@
-# Optimizing Neural Information Retrevial techniques
+# Optimizing Neural Information Retrevial Techniques
 
 The code in this repo represents the work we did as part of Capstone requirements for MIDS program at UC Berkeley.
 
