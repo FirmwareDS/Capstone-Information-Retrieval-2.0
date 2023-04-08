@@ -9,7 +9,7 @@ For activating the right environment for running the code, the following steps n
 conda env create -f conda_env[_cpu].yml
 conda activate colbert
 ```
-Also, we ran all the experiments on AWS instance "g4dn.4xlarge". A minimum of GPU with 64GB memory is required for training and indexing steps. We used "Deep Learning AMI GPU PyTorch 1.13.1 (Ubuntu 20.04) 20230222" AMI. 
+Also, we ran all the experiments on AWS instance **"g4dn.4xlarge"**. A minimum of GPU with 64GB memory is required for training and indexing steps. We used **"Deep Learning AMI GPU PyTorch 1.13.1 (Ubuntu 20.04) 20230222" **AMI. 
 
 These are steps for quantization to work:
 
