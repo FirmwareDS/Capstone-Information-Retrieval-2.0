@@ -14,7 +14,7 @@ https://msmarco.blob.core.windows.net/msmarcoranking/collectionandqueries.tar.gz
 
 **Step 2: Index your collection.** Once you have a trained ColBERT model, you need to [index your collection](#indexing) to permit fast retrieval. This step encodes all passages into matrices, stores them on disk, and builds data structures for efficient search.
 
-**Step 3: Search the collection with your queries.** Given the model and index, you can [issue queries over the collection](#retrieval) to retrieve the top-k passages for each query.
+**Step 3a: Search the collection with your queries.** Given the model and index, you can [issue queries over the collection](#retrieval) to retrieve the top-k passages for each query.
 
-
+**Step 3b: Search the collection with a quantized model queries.** Given the model and index, you can generate a quantiantized model of the linear layers of the ColBERT model with the queries over the collection](#retrieval) to retrieve the top-k passages for each query.
 
