@@ -16,8 +16,10 @@ These are steps for quantization to work:
 Using ColBERT on a dataset typically involves the following steps.
 
 **Step 0: Preprocess your collection.** At its simplest, ColBERT works with tab-separated (TSV) files: a file (e.g., `collection.tsv`) will contain all passages and another (e.g., `queries.tsv`) will contain a set of queries for searching the collection. These files can be downloaded from the below links
+```
 https://ir-datasets.com/msmarco-passage.html
-https://msmarco.blob.core.windows.net/msmarcoranking/collectionandqueries.tar.gz
+```
+Its important to create a directory in parallel to the repo with folder name "data".
 
 **Step 1: Download the [pre-trained ColBERTv2 checkpoint](https://downloads.cs.stanford.edu/nlp/data/colbert/colbertv2/colbertv2.0.tar.gz).** This checkpoint has been trained on the MS MARCO Passage Ranking task. You can also _optionally_ [train your own ColBERT model](#training). The indexes should be saved in <<base_dir>>/ColBERT/experiments/indexes
 
