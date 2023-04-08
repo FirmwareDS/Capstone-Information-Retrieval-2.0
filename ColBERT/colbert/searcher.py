@@ -72,8 +72,7 @@ class Searcher:
         Q = self.encode(queries_)
         timestamp()
         print("Encoding End")
-        return
-        #return self._search_all_Q(queries, Q, k, filter_fn=filter_fn)
+        return self._search_all_Q(queries, Q, k, filter_fn=filter_fn)
 
     def _search_all_Q(self, queries, Q, k, filter_fn=None):
         all_scored_pids = [list(zip(*self.dense_search(Q[query_idx:query_idx+1], k, filter_fn=filter_fn)))
