@@ -9,7 +9,7 @@ For activating the right environment for running the code, the following steps n
 conda env create -f conda_env[_cpu].yml
 conda activate colbert
 ```
-
+Also, we ran all the experiments on AWS instance "g4dn.4xlarge". A minimum of GPU with 64GB memory is required for training and indexing steps. We used "Deep Learning AMI GPU PyTorch 1.13.1 (Ubuntu 20.04) 20230222" AMI. 
 
 These are steps for quantization to work:
 
@@ -19,9 +19,9 @@ Using ColBERT on a dataset typically involves the following steps.
 https://ir-datasets.com/msmarco-passage.html
 https://msmarco.blob.core.windows.net/msmarcoranking/collectionandqueries.tar.gz
 
-**Step 1: Download the [pre-trained ColBERTv2 checkpoint](https://downloads.cs.stanford.edu/nlp/data/colbert/colbertv2/colbertv2.0.tar.gz).** This checkpoint has been trained on the MS MARCO Passage Ranking task. You can also _optionally_ [train your own ColBERT model](#training).
+**Step 1: Download the [pre-trained ColBERTv2 checkpoint](https://downloads.cs.stanford.edu/nlp/data/colbert/colbertv2/colbertv2.0.tar.gz).** This checkpoint has been trained on the MS MARCO Passage Ranking task. You can also _optionally_ [train your own ColBERT model](#training). The indexes should be saved in <<base_dir>>/ColBERT/experiments/indexes
 
-**Step 2: Index your collection.** Once you have a trained ColBERT model, you need to [index your collection](#indexing) to permit fast retrieval. This step encodes all passages into matrices, stores them on disk, and builds data structures for efficient search.
+**Step 2: Index your collection.** Once you have a trained ColBERT model, you need to [index your collection](#indexing) to permit fast retrieval. This step encodes all passages into matrices, stores them on disk, and builds data structures for efficient search. The indexes should be saved in <<base_dir>>/ColBERT/experiments/indexes
 
 At this point either step 3a(baseline model) or 3b(quantized model based on baseline model) can be performed. 
 **Step 3a: Search the collection with your queries.** Given the model and index, you can [issue queries over the collection](#retrieval) to retrieve the top-k passages for each query.
