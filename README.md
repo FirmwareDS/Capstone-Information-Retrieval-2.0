@@ -2,6 +2,15 @@
 
 The code in this repo represents the work we did as part of Capstone requirements for MIDS program at UC Berkeley.
 
+
+For activating the right environment for running the code, the following steps need to be followed.
+
+```
+conda env create -f conda_env[_cpu].yml
+conda activate colbert
+```
+
+
 These are steps for quantization to work:
 
 Using ColBERT on a dataset typically involves the following steps.
