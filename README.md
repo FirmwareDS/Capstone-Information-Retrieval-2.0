@@ -1,6 +1,6 @@
 # Optimizing Neural Information Retrevial techniques
 
-The code in this repo represents the work we did as part of Capstone requirements for MIDs program at UC Berkeley.
+The code in this repo represents the work we did as part of Capstone requirements for MIDS program at UC Berkeley.
 
 These are steps for quantization to work:
 
@@ -14,7 +14,10 @@ https://msmarco.blob.core.windows.net/msmarcoranking/collectionandqueries.tar.gz
 
 **Step 2: Index your collection.** Once you have a trained ColBERT model, you need to [index your collection](#indexing) to permit fast retrieval. This step encodes all passages into matrices, stores them on disk, and builds data structures for efficient search.
 
+At this point either step 3a(baseline model) or 3b(quantized model based on baseline model) can be performed. 
 **Step 3a: Search the collection with your queries.** Given the model and index, you can [issue queries over the collection](#retrieval) to retrieve the top-k passages for each query.
 
 **Step 3b: Search the collection with a quantized model queries.** Given the model and index, you can generate a quantiantized model of the linear layers of the ColBERT model with the queries over the collection](#retrieval) to retrieve the top-k passages for each query.
+
+
 
