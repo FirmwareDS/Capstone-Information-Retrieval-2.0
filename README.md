@@ -1,5 +1,6 @@
-# Neural-Information-Retrieval
-This is a research project that has potential to be used in search and recommendation engines.
+# Optimizing Neural Information Retrevial techniques
+
+The code in this repo represents the work we did as part of Capstone requirements for MIDs program at UC Berkeley.
 
 These are steps for quantization to work:
 
