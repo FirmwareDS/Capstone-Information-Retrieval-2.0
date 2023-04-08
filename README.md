@@ -17,7 +17,7 @@ https://msmarco.blob.core.windows.net/msmarcoranking/collectionandqueries.tar.gz
 At this point either step 3a(baseline model) or 3b(quantized model based on baseline model) can be performed. 
 **Step 3a: Search the collection with your queries.** Given the model and index, you can [issue queries over the collection](#retrieval) to retrieve the top-k passages for each query.
 
-**Step 3b: Search the collection with a quantized model queries.** Given the model and index, you can generate a quantiantized model of the linear layers of the ColBERT model with the queries over the collection](#retrieval) to retrieve the top-k passages for each query.
+**Step 3b: Search the collection with a quantized model(Example is provided in ColBERT/colbert_quantization.ipynb) queries.** Given the model and index, you can generate a quantiantized model of the linear layers of the ColBERT model with the queries over the collection](#retrieval) to retrieve the top-k passages for each query.
 
 
 
