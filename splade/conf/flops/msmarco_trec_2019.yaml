@@ -1,0 +1,4 @@
+# @package _global_
+
+data:
+  flops_queries: /home/ubuntu/capstone/Capstone-Information-Retrieval-2.0/splade/data/msmarco/TREC_DL_2019/queries_2019

@@ -4,15 +4,16 @@ defaults:  # (these specify which config FILES to use)
   - train/config: splade_toy
   - train/data: toy
   - train/model: splade
-  ############## INDEX ###################################
-  - index: toy
+############## INDEX ###################################
+  - index: msmarco_trec_2019
   ############## RETRIEVE ################################
-  - retrieve_evaluate: toy
+  - retrieve_evaluate: msmarco_trec_2019
   ############### FLOPS ##################################
-  - flops: toy
+  - flops: msmarco_trec_2019
+
 
 # Direct PARAMETER setting
-config:  # to be provided for each run
-  checkpoint_dir: models/splade_default/checkpoint
-  index_dir: models/splade_default/index
-  out_dir: models/splade_default/out
+config: # to be provided for each run
+  checkpoint_dir: models/splade_trec_2019/checkpoint
+  index_dir: models/splade_trec_2019/index
+  out_dir: models/splade_trec_2019/out

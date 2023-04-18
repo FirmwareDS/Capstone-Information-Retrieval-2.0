@@ -17,3 +17,11 @@ max_length: 256
 fp16: true
 matching_type: splade
 monitoring_ckpt: MRR@10  # or e.g. MRR@10
+loss: InBatchPairwiseNLL
+regularizer:
+  FLOPS:
+    lambda_q: 5e-4
+    lambda_d: 3e-4
+    T: 3
+    targeted_rep: rep
+    reg: FLOPS

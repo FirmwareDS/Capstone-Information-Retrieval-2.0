@@ -1,14 +1,14 @@
 # @package _global_
 
 data:
-  Q_COLLECTION_PATH: [ data/msmarco/dev_queries,
-                       data/msmarco/TREC_DL_2019/queries_2019,
-                       data/msmarco/TREC_DL_2020/queries_2020 ]
-  EVAL_QREL_PATH: [ data/msmarco/dev_qrel.json,
-                    data/msmarco/TREC_DL_2019/qrel.json,
-                    data/msmarco/TREC_DL_2019/qrel_binary.json,
-                    data/msmarco/TREC_DL_2020/qrel.json,
-                    data/msmarco/TREC_DL_2020/qrel_binary.json ]
+  Q_COLLECTION_PATH: [ /home/ubuntu/capstone/Capstone-Information-Retrieval-2.0/splade/data/msmarco/dev_queries,
+                       /home/ubuntu/capstone/Capstone-Information-Retrieval-2.0/splade/data/msmarco/TREC_DL_2019/queries_2019,
+                       /home/ubuntu/capstone/Capstone-Information-Retrieval-2.0/splade/data/msmarco/TREC_DL_2020/queries_2020 ]
+  EVAL_QREL_PATH: [ /home/ubuntu/capstone/Capstone-Information-Retrieval-2.0/splade/data/msmarco/dev_qrel.json,
+                    /home/ubuntu/capstone/Capstone-Information-Retrieval-2.0/splade/data/msmarco/TREC_DL_2019/qrel.json,
+                    /home/ubuntu/capstone/Capstone-Information-Retrieval-2.0/splade/data/msmarco/TREC_DL_2019/qrel_binary.json,
+                    /home/ubuntu/capstone/Capstone-Information-Retrieval-2.0/splade/data/msmarco/TREC_DL_2020/qrel.json,
+                    /home/ubuntu/capstone/Capstone-Information-Retrieval-2.0/splade/data/msmarco/TREC_DL_2020/qrel_binary.json ]
 
 config:
   top_k: 1000

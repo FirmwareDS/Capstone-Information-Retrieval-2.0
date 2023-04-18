@@ -1,8 +1,8 @@
 # @package _global_
 
 data:
-  Q_COLLECTION_PATH: [data/msmarco/dev_queries]
-  EVAL_QREL_PATH: [data/msmarco/dev_qrel.json]
+  Q_COLLECTION_PATH: [/home/ubuntu/capstone/Capstone-Information-Retrieval-2.0/splade/data/msmarco/dev_queries]
+  EVAL_QREL_PATH: [/home/ubuntu/capstone/Capstone-Information-Retrieval-2.0/splade/data/msmarco/dev_qrel.json]
 
 config:
   top_k: 1000

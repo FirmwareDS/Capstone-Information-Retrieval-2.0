@@ -12,7 +12,16 @@ defaults: # (these specify which config FILES to use)
   - flops: msmarco
 
 # Direct PARAMETER setting
-config: # to be provided for each run
-  checkpoint_dir: models/normal_splade_test/checkpoint
-  index_dir: models/normal_splade_test/index
-  out_dir: models/normal_splade_test/out
+config:
+  loss: InBatchPairwiseNLL
+  augment_pair: in_batch_negatives
+  regularizer:
+    FLOPS:
+      lambda_q: 0.0003
+      lambda_d: 0.0001
+      T: 50000
+      targeted_rep: rep
+      reg: FLOPS
+  checkpoint_dir: models/splade_max/checkpoint
+  index_dir: models/splade_max/index
+  out_dir: models/splade_max/out

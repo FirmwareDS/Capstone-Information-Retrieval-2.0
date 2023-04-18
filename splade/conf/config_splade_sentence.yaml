@@ -1,0 +1,28 @@
+# @package _global_
+
+# FILES
+defaults: # (these specify which config FILES to use)
+  ############## TRAIN ###################################
+  - train/config: splade_sentence
+  - train/data: toy
+  - train/model: splade_sentence
+  ############## INDEX ###################################
+  - index: toy
+  ############## RETRIEVE ################################
+  - retrieve_evaluate: toy
+  ############### FLOPS ##################################
+  - flops: toy
+
+# Direct PARAMETER setting
+config:
+#  loss: DistilMarginMSE
+#  regularizer:
+#    FLOPS:
+#      lambda_q: 0.5
+#      lambda_d: 0.4
+#      T: 50000
+#      targeted_rep: rep
+#      reg: FLOPS
+  checkpoint_dir: models/splade_sentence_sbert_test2/checkpoint
+  index_dir: models/splade_sentence_sbert_test2/index
+  out_dir: models/splade_sentence_sbert_test2/out

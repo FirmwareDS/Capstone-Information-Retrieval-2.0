@@ -5,11 +5,11 @@ defaults: # (these specify which config FILES to use)
   - train/data: distil_from_ensemble
   - train/model: splade_cocondenser
   ############## INDEX ###################################
-  - index: msmarco
+  - index: toy
   ############## RETRIEVE ################################
   - retrieve_evaluate: all
   ############### FLOPS ##################################
-  - flops: msmarco
+  - flops: toy
 
 # Direct PARAMETER setting
 config:
